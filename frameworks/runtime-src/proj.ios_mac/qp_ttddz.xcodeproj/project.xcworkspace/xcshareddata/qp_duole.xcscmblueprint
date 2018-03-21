@@ -1,0 +1,24 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "67a5b063-1fcf-4d08-90e2-73d486faccd7++1740" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "67a5b063-1fcf-4d08-90e2-73d486faccd7++1740" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "73A1819A-AE91-4AFF-BBE5-609C7CF26670",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "67a5b063-1fcf-4d08-90e2-73d486faccd7++1740" : "game_hlddz\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "qp_duole",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "frameworks\/runtime-src\/proj.ios_mac\/qp_duole.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/localhost\/client",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "67a5b063-1fcf-4d08-90e2-73d486faccd7++1740"
+    }
+  ]
+}

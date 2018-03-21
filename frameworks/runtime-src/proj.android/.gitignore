@@ -1,0 +1,15 @@
+.DS_Store
+.svn
+*.DS_Store
+assets
+bin
+libs
+obj
+gen
+.settings
+.classpath
+.project
+res
+.so
+README.md
+prebuild

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>多乐棋牌</title>
+    <link rel="icon" type="image/GIF" href="res/favicon.ico"/>
+    <META HTTP-EQUIV="pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="yes"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+    <style>
+        body, canvas, div {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            -khtml-user-select: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+        html, body	{ height:100%; }
+        body { margin:auto; overflow:auto; text-align:center; background-color:#000; }
+    </style>
+</head>
+<script type="text/javascript">
+
+    function showBodyDiv(){
+        var bodyDiv = document.getElementById('bodyDiv');
+        resizeMask();
+    }
+
+    function resizeMask(){
+        //alert("resizeMask-")
+        var bodyDiv = document.getElementById('bodyDiv');
+        bodyDiv.style.left = ((document.body.offsetWidth - bodyDiv.offsetWidth) / 2) +'px';
+        bodyDiv.style.top = ((document.body.offsetHeight - bodyDiv.offsetHeight) / 2)+'px';
+
+        if((document.body.offsetHeight - bodyDiv.offsetHeight) < 0){
+            bodyDiv.style.top = 0 + "px";
+        }
+        if((document.body.offsetWidth - bodyDiv.offsetWidth) < 0){
+            bodyDiv.style.left = 0+ "px";
+        }
+
+    }
+
+</script>
+<body  onload = "showBodyDiv()" onresize="resizeMask()" >
+<div id="bodyDiv" style="width:960px; height:640px; position: absolute; overflow: none; margin:auto; ">
+    <canvas id="gameCanvas" width="960" height="640"></canvas>
+</div>
+<script src="frameworks/cocos2d-html5/CCBoot.js"></script>
+<script src="main.js"></script>
+<script>
+    if (!document.getElementById("gameCanvas").getContext)
+    {
+        alert("不支持html5,请使用最新版本谷歌Chrome浏览器或火狐浏览器");
+    }else
+    {
+        //alert("支持html5");
+        window.WebSocket = window.WebSocket || window.MozWebSocket;
+        if (!window.WebSocket){
+            alert("不支持WebSocket,请使用最新版本谷歌Chrome浏览器或火狐浏览器");
+        }
+    }
+</script>
+</body>
+<script type="text/javascript">
+    showBodyDiv();
+</script>
+</html>

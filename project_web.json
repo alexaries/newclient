@@ -1,0 +1,28 @@
+{
+    "project_type": "javascript",
+
+    "debugMode" : 1,
+    "showFPS" : false,
+    "frameRate" : 30,
+    "id" : "gameCanvas",
+    "renderMode" : 0,
+    "engineDir":"frameworks/cocos2d-html5",
+
+    "modules" : ["cocos2d","extensions"],
+
+    "gnewver":1,
+
+    "jsList" : [
+        "src/resource.js",
+        "src/JSDelegate.js",
+
+
+
+
+        
+
+        "src/language/ResWord_zhcn.js",
+        "src/language/ResWord_zhtw.js"
+
+    ]
+}

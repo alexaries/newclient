@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.qp.duojinyx.comlib"
+      android:versionCode="1"
+      android:versionName="1.0">
+      <!--  *.R 也要改 不能数字开头   -->
+ 
+    <uses-sdk android:minSdkVersion="9"/>
+    <uses-feature android:glEsVersion="0x00020000" />
+
+    <application android:name="cn.coolqp.game.BaseMyApplication"
+        		 android:label="@string/app_name"
+                 android:icon="@drawable/icon">
+                 
+        <!-- Tell NativeActivity the name of our .so ;;;;put out of activity  -->
+        <meta-data android:name="android.app.lib_name"
+                       android:value="cocos2djs" />
+
+        <activity android:name="cn.coolqp.game.BaseQpgameActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="landscape"
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                  android:configChanges="orientation"
+                  >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>  
+               <action android:name="android.intent.action.VIEW" />  
+               <category android:name="android.intent.category.DEFAULT" />  
+               <category android:name="android.intent.category.BROWSABLE" />  
+               <data android:scheme="com.qp.duojinyx.com" android:host="com.qp.duojinyx.com" android:pathPrefix="/qpenter"> </data>
+			</intent-filter>
+        </activity>
+        <!-- 
+        <activity android:name="com.alipay.android.app.sdk.WapPayActivity" android:screenOrientation="portrait">
+		</activity>
+		 -->
+		 
+		 
+        <!-- 微信 易信回调 路径 必须是 包名＋xxapi.xxEntryActivity -->
+
+		 
+         <activity
+            android:name="com.qp.duojinyx.com.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+		 
+
+        <!-- alipay -->
+		<activity
+		android:name="com.alipay.sdk.app.H5PayActivity"
+		android:configChanges="orientation|keyboardHidden|navigation"
+		android:exported="false"
+		android:screenOrientation="behind" >
+		</activity>
+		<activity
+		android:name="com.alipay.sdk.auth.AuthActivity"
+		android:configChanges="orientation|keyboardHidden|navigation"
+		android:exported="false"
+		android:screenOrientation="behind" >
+		</activity>
+		 
+		<!-- 银联  -->
+		<activity android:name="com.unionpay.uppay.PayActivity">
+        </activity>
+        
+		
+        
+		
+       
+        
+		
+        
+    </application>
+
+    <supports-screens android:anyDensity="true"
+                      android:smallScreens="true"
+                      android:normalScreens="true"
+                      android:largeScreens="true"
+                      android:xlargeScreens="true"/>
+    
+    
+    <!-- 需要的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/> 
+	<!-- sdk 权限  -->
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	
+	
+	<!-- share  tasks-youmi-->
+	<uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    
+    
+    <!-- cmcc mm  
+    
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+	-->
+	<!-- domob 
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+	-->
+	<!-- youmi 
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+	-->
+	
+	<!-- VERY IMPORTANT! Don't forget this permission, or in-app billing won't work.
+    <uses-permission android:name="com.android.vending.BILLING" />
+    -->
+    <!-- alipay -->
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+					     
+</manifest> 

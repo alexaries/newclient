@@ -1,0 +1,41 @@
+
+0、每次app 整体升级改下 Global的 mScriptDownPath；//如 updatefiles_v10200  //v1.2.0
+1、xcode 6 打包 ，apploader 上传
+2、iap 测试 用 ipod touch4
+3、每次提交 ios：build加1  android：versioncode加1
+4、schedule 放到 onEnter里
+*************************发布******************************
+pico .bash_profile
+cd /mobile/cocos2d-js-v3.0/projects/game_duole
+------
+html5 发布：(要修改project.json 要包含全部js文件)   要把加载的资源放进去
+set ANT_OPTS=-Xmx512m -Xms128m -XX:MaxPermSize=192m -XX:+HeapDumpOnOutOfMemoryError
+cocos run -p web -m release
+------
+android 发布：
+cocos run -p android -m release   之前用r9b  现在r9d
+
+------
+cd /mobile/android-sdk-macosx/platform-tools
+adb connect 192.168.0.59
+连 adb
+
+
+
+------
+//转jsc 文件
+cocos jscompile -s /mobile/cocos2d-js-v3.0/projects/game_duole/frameworks/js-bindings/bindings/script  -d /mobile/cocos2d-js-v3.0/projects/game_duole/frameworks/js-bindings/bindings/script
+
+
+//转jsc 文件
+cocos jscompile -s /mobile/cocos2d-js-v3.0/projects/game_duole/src  -d /mobile/cocos2d-js-v3.0/projects/game_duole/src_sign
+
+//转jsc 文件
+cocos jscompile -s /mobile/cocos2d-js-v3.0/projects/game_duole/src_code  -d /mobile/cocos2d-js-v3.0/projects/game_duole/src
+
+sudo find /app_qp_duole_publish/src -name "*.DS_Store" -exec rm -r {} \;
+
+*******************************************************
+
+
+

@@ -1,0 +1,42 @@
+----
+//代码部分都加git 控制
+---
+手动 添加 本地 git 控制
+cd /mobile/cocos2d-js-v3.0/projects/game_duole/
+
+
+/////proj.android 需要用  指定 的 .gitignore
+
+
+git init
+git add .
+git commit -m 'Initial commit'
+--
+
+git add .     //标记添加修改的文件
+git add -A    //标记删除的文件
+
+
+git status
+
+--
+git checkout master
+--
+git branch devV38
+git checkout devV38
+
+执行合并操作：git merge develop。
+
+ 切换到主分支
+   git reset --soft HEAD^
+
+  回到没有做过的情况
+ git reset --hard（此过程不可逆，回到修改之前的状态）
+
+
+
+vim .gitignore
+cat .gitignore
+
+增加.DS_Store到库的顶层目录下.gitignore文件
+git add .gitignore

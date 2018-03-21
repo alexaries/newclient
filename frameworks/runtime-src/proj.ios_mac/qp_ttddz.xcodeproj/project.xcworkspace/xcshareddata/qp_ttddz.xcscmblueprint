@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "67a5b063-1fcf-4d08-90e2-73d486faccd7++1740",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "67a5b063-1fcf-4d08-90e2-73d486faccd7++1740" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "67a5b063-1fcf-4d08-90e2-73d486faccd7++1740" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "63CCC8EA-E015-46AF-B7C8-26A5925C0A35",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "67a5b063-1fcf-4d08-90e2-73d486faccd7++1740" : "game_hlddz\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "qp_ttddz",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "frameworks\/runtime-src\/proj.ios_mac\/qp_ttddz.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/localhost\/client",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "67a5b063-1fcf-4d08-90e2-73d486faccd7++1740"
+    }
+  ]
+}

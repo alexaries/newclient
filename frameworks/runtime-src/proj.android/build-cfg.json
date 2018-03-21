@@ -1,0 +1,34 @@
+{
+    "ndk_module_path" :[
+        "../../js-bindings",
+        "../../js-bindings/cocos2d-x",
+        "../../js-bindings/cocos2d-x/cocos",
+        "../../js-bindings/cocos2d-x/external"
+    ],
+    "copy_resources": [
+        {
+            "from": "../../../plugin/plugin_cashier_v3.7.apk",
+            "to": ""
+        },
+        {
+            "from": "../../../src",
+            "to": "src"
+        },
+        {
+            "from": "../../../res",
+            "to": "res"
+        },
+        {
+            "from": "../../../main.js",
+            "to": ""
+        },
+        {
+            "from": "../../../project.json",
+            "to": ""
+        },
+        {
+            "from": "../../js-bindings/bindings/script",
+            "to": "script"
+        }
+    ]
+}

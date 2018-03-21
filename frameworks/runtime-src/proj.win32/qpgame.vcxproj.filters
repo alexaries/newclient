@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="resource">
+      <UniqueIdentifier>{ca9c9e15-d942-43a1-aa7a-5f0b74ca1afd}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;png;manifest</Extensions>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{ccb2323b-1cfa-41ea-bcf4-ba5f07309396}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{e93a77e1-af1e-4400-87d3-504b62ebdbb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\scene">
+      <UniqueIdentifier>{3f4c8c75-f782-4f38-964b-99a383e7f64b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\logic">
+      <UniqueIdentifier>{84a76243-5752-4836-acdb-23ae5a7b53ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\bean">
+      <UniqueIdentifier>{d9aab5c0-a431-441d-8792-7a405a863f36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\web">
+      <UniqueIdentifier>{6bf1920f-8336-4ec8-a4d1-1c56e0caa9c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\web\res_image">
+      <UniqueIdentifier>{1b6dcc0c-b9b7-4a5c-ba2f-725c4f9c7931}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\scene\CBaseGScene.cpp">
+      <Filter>Classes\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\scene\NoticeLayer.cpp">
+      <Filter>Classes\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\scene\StartScene.cpp">
+      <Filter>Classes\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\logic\CallJS.cpp">
+      <Filter>Classes\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\logic\GameLogic.cpp">
+      <Filter>Classes\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\logic\GameUtil.cpp">
+      <Filter>Classes\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\logic\Global.cpp">
+      <Filter>Classes\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\logic\ResWord.cpp">
+      <Filter>Classes\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\logic\SqliteManager.cpp">
+      <Filter>Classes\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\web\res_image\LoadRes.cpp">
+      <Filter>Classes\web\res_image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\web\res_image\ResData.cpp">
+      <Filter>Classes\web\res_image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\web\res_image\ResDownload.cpp">
+      <Filter>Classes\web\res_image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\web\HttpDownload.cpp">
+      <Filter>Classes\web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\web\HttpVisit.cpp">
+      <Filter>Classes\web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\web\WebHttpClient.cpp">
+      <Filter>Classes\web</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="..\Classes\scene\CBaseGScene.h">
+      <Filter>Classes\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\scene\NoticeLayer.h">
+      <Filter>Classes\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\scene\StartScene.h">
+      <Filter>Classes\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\logic\CallJS.h">
+      <Filter>Classes\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\logic\GameDef.h">
+      <Filter>Classes\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\logic\GameLogic.h">
+      <Filter>Classes\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\logic\GameUtil.h">
+      <Filter>Classes\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\logic\Global.h">
+      <Filter>Classes\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\logic\ResWord.h">
+      <Filter>Classes\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\logic\Singleton.h">
+      <Filter>Classes\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\logic\SqliteManager.h">
+      <Filter>Classes\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\bean\HallServer.h">
+      <Filter>Classes\bean</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\bean\PayLog.h">
+      <Filter>Classes\bean</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\bean\ResVersionInfo.h">
+      <Filter>Classes\bean</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\bean\VersionData.h">
+      <Filter>Classes\bean</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\web\res_image\LoadRes.h">
+      <Filter>Classes\web\res_image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\web\res_image\ResData.h">
+      <Filter>Classes\web\res_image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\web\res_image\ResDownload.h">
+      <Filter>Classes\web\res_image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\web\HttpDownload.h">
+      <Filter>Classes\web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\web\HttpReq.h">
+      <Filter>Classes\web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\web\HttpVisit.h">
+      <Filter>Classes\web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\web\WebHttpClient.h">
+      <Filter>Classes\web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Header.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\game.ico">
+      <Filter>resource</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>duoleqp.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>3E2A478367DEADD72D2A12564EC40CF7BC4A3E41</string>
+				<key>dateExpires</key>
+				<string>29/03/18</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>S9DA44ATQ3.qp.kxddzyp.com</string>
+				<key>aps-environment</key>
+				<string>production</string>
+				<key>beta-reports-active</key>
+				<true/>
+				<key>com.apple.developer.team-identifier</key>
+				<string>S9DA44ATQ3</string>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>duoleqp.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>440dbafa-d31f-4ce9-8ddb-3b887de62842</string>
+				<key>name</key>
+				<string>iOS Team Store Provisioning Profile: qp.kxddzyp.com</string>
+			</dict>
+			<key>symbols</key>
+			<true/>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>S9DA44ATQ3</string>
+				<key>name</key>
+				<string>Mingzhe Jiang</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
